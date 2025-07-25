@@ -2,6 +2,6 @@ streamlit
 pandas
 numpy
 re
-plotly
+plotly.express
 csv
 io
