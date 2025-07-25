@@ -6,20 +6,19 @@ import requests
 from io import BytesIO
 import plotly.express as px
 
-
 st.set_page_config(layout="wide", page_title="MNHN Dashboard")
 
-#Load data form google sheet
+# Load data from Google Drive Excel
 @st.cache_data
 def load_data():
-    file_id = st.secrets["id"]  # make sure id key exists!
+    file_id = st.secrets["id"]   # Make sure st.secrets["id"] mein sahi file id ho
     gdrive_url = f"https://drive.google.com/uc?export=download&id={file_id}"
     response = requests.get(gdrive_url)
     xls = pd.ExcelFile(BytesIO(response.content))
     data = xls.parse("Database")
     key = xls.parse("Key")
     try:
-        key_mrq = xls.parse("Key_MRQ")    # yahi excel se parse karo
+        key_mrq = xls.parse("Key_MRQ")
         mrq_text_dict = dict(zip(key_mrq['Variable'], key_mrq['TEXT']))
     except Exception as e:
         st.warning(f"Key_MRQ sheet not loaded: {str(e)}")
@@ -27,32 +26,7 @@ def load_data():
     return data, key, mrq_text_dict
 
 data, key, mrq_text_dict = load_data()
-
 rename_dict = dict(zip(key['Variables'], key['TEXT']))
-
-
-#Load data form google sheet
-#@st.cache_data
-#def load_data():
- #   file_id = st.secrets["id"]
-  #  gdrive_url = f"https://drive.google.com/uc?export=download&id={file_id}"
-   # xls = pd.ExcelFile(gdrive_url)
-    #data = xls.parse("Database")
-    #key = xls.parse("Key")
-    #return data, key
-
-#data, key = load_data()
-
-# --- Prepare variable name mapping from Key sheet ---
-#rename_dict = dict(zip(key['Variables'], key['TEXT']))
-
-# --- Load Key_MRQ sheet for multi-select variable text mapping ---
-try:
-    key_mrq = pd.read_excel("MNHN_Data.xlsx", sheet_name="Key_MRQ")
-    mrq_text_dict = dict(zip(key_mrq['Variable'], key_mrq['TEXT']))
-except Exception as e:
-    st.warning(f"Key_MRQ sheet not loaded: {str(e)}")
-    mrq_text_dict = {}
 
 #Converting Age of child into Age classes:
 # Make sure cb4 is numeric (will convert errors to NaN)
