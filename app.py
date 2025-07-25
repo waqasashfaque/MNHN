@@ -195,7 +195,7 @@ def summary_charts_tables(data, var_list, mappings, module_key):
 
 
 # --- KPIs ---
-st.title("📊 NIMS End-line Assessment : Advancing Maternal & Child Health Outcomes")
+st.title("📊 Endline Assessment of MNHN Program using the NIMS toolkit (Nutrition Intervention Monitoring Surveys (NIMS)")
 st.info(f"You are logged in as: {st.session_state['username']}")
 #st.markdown("---")
 #st.markdown("#### District Filter")
