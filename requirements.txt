@@ -1,7 +1,4 @@
 streamlit
 pandas
 numpy
-re
 plotly
-csv
-io
