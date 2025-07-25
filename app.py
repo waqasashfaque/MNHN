@@ -31,7 +31,7 @@ if not st.session_state.get('auth', False):
 # Load data from Google Drive Excel
 @st.cache_data
 def load_data():
-    file_id = st.secrets["id"]   # Make sure st.secrets["id"] mein sahi file id ho
+    file_id = st.secrets["id"]
     gdrive_url = f"https://drive.google.com/uc?export=download&id={file_id}"
     response = requests.get(gdrive_url)
     xls = pd.ExcelFile(BytesIO(response.content))
@@ -51,19 +51,14 @@ rename_dict = dict(zip(key['Variables'], key['TEXT']))
 #Converting Age of child into Age classes:
 # Make sure cb4 is numeric (will convert errors to NaN)
 data['cb4'] = pd.to_numeric(data['cb4'], errors='coerce')
-
 # Drop missing/NaN if required or handle as needed
 data = data.dropna(subset=['cb4'])
-
 bins = [-1, 3, 7, 11]
 labels = ['0 - 3 Months', '4 - 7 Months', '8 - 11 Months']
-
 data['cb4_class'] = pd.cut(data['cb4'], bins=bins, labels=labels)
 
 #AC2 no of visits converted 8 and above in one class
-
 data['AC2'] = pd.to_numeric(data['AC2'], errors='coerce').fillna(0).astype(int)
-
 # Helper function for labeling
 def ac2_group(val):
     if val >= 8:
@@ -77,7 +72,6 @@ data['AC2_new'] = data['AC2'].apply(ac2_group)
 # --- Identify Multiple Selection Variables ---
 
 import re
-
 # --- Multiple Selection Variable Groups ---
 
 multi_select_groups = {}
