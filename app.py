@@ -7,7 +7,27 @@ from io import BytesIO
 import plotly.express as px
 
 st.set_page_config(layout="wide", page_title="MNHN Dashboard")
+# Adding all users, all users will be appear as dropdown 
+USERS = st.secrets["users"]
 
+def login_form():
+    st.title("Login")
+    usernames = list(USERS.keys())
+    username = st.selectbox("Select Username", usernames)
+    password = st.text_input("Password", type="password")
+    login_btn = st.button("Login")
+    if login_btn:
+        if username in USERS and password == USERS[username]:
+            st.session_state['auth'] = True
+            st.session_state['username'] = username
+            st.rerun()
+        else:
+            st.error("Invalid credentials!")
+
+if not st.session_state.get('auth', False):
+    login_form()
+    st.stop()
+    
 # Load data from Google Drive Excel
 @st.cache_data
 def load_data():
