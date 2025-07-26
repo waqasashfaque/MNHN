@@ -43,4 +43,4 @@ I'm open to collaborating with researchers, organizations, and teams to develop 
 ## Contact  
 For questions or feedback, contact the MNHN analytics team.
 waqas.ashfaque@yahoo.com or 
-whatsapp at https://wa.me/923335696175
+WhatsApp  at https://wa.me/923335696175
