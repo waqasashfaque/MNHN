@@ -15,7 +15,8 @@ Check out the dashboard here:
 https://momentum-mnhn-dashboard.streamlit.app/
 
 for username and password you can directly contact with the developer of this application
-waqas.ashfaque@yahoo.com or whatsapp at :https://wa.me/923335696175
+waqas.ashfaque@yahoo.com or 
+whatsapp at https://wa.me/923335696175
 
 ## Features  
 1. Filter data by district, variables, and other survey parameters  
@@ -39,4 +40,5 @@ The dashboard uses MNHN data securely stored on Google Drive and is automaticall
 
 ## Contact  
 For questions or feedback, contact the MNHN analytics team.
-waqas.ashfaque@yahoo.com or whatsapp at :https://wa.me/923335696175
+waqas.ashfaque@yahoo.com or 
+whatsapp at https://wa.me/923335696175
