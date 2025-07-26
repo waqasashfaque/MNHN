@@ -36,7 +36,7 @@ The dashboard uses MNHN data securely stored on Google Drive and is automaticall
 - Plotly  
 - Google Drive integration
 
-#Future Collaborations
+## Future Collaborations
 
 I'm open to collaborating with researchers, organizations, and teams to develop customized analytics solutions that meet their specific needs. If you're interested in exploring how data analytics can benefit your project or organization, feel free to reach out to me. Let's discuss how we can work together to create innovative solutions that drive impact.
 
