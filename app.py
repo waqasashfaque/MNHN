@@ -94,6 +94,11 @@ def summary_charts_tables(data, var_list, mappings, module_key):
                             labels={var: var_title, 'Count': 'Count', 'District': 'District'},
                             title=var_title)
                 fig.update_layout(title={'text': var_title, 'font': {'size': 32}})
+                fig.update_layout(
+                dragmode=False,  # Disable zooming and panning
+                xaxis=dict(fixedrange=True),  # Disable x-axis zooming
+                yaxis=dict(fixedrange=True)  # Disable y-axis zooming
+            )            
                 st.plotly_chart(fig, use_container_width=True)
 
                 # Build N and % table for each district and total
