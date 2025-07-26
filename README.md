@@ -1,14 +1,12 @@
 Endline Assessment of MNHN Prog using the NIMS toolkit (Nutrition Intervention Monitoring Surveys (NIMS)
 
-About Project
-
-Nutrition International (NI) aims to improve the health of adolescent girls and women of reproductive age; pregnant women and their new-borns; and infants and young children through reducing anaemia, birth defects, low birth weight and stunting. To achieve this NI implements interventions with local governmentsand partners in selected high-burden countries in Africa and Asia.
-Maternal and Newborn Health and Nutrition (MNHN) interventions are being supported by Nutrition International in Lodhran (Punjab), Jamshoro and Khairpur (Sindh), and more recently in Ziarat (Balochistan)
-
 # MNHN Dashboard
 
-This dashboard provides interactive analytics for MNHN survey data.  
-Built with Streamlit and fully cloud-hosted.
+The MNHN Dashboard is an interactive analytics platform designed to provide real-time insights into the MNHN survey data. Built with Streamlit and hosted on the cloud, this dashboard offers seamless accessibility and ease of use. With its interactive charts powered by Plotly, users can filter data by district, variables, and other survey parameters, gaining valuable insights into the data.
+
+This dashboard is designed to facilitate efficient monitoring of data collected by field enumerators, enabling timely decision-making and process improvement. The system automatically updates as new information is collected, allowing for real-time monitoring, efficient team management, and fast response to evolving situations on the ground.
+The MNHN Dashboard is a robust, flexible, and scalable solution that can be tailored to meet the specific needs of various projects and clients. If you're interested in developing similar dashboards for your projects or collaborations, I'm available for discussions. Let's work together to leverage the power of data analytics and drive success in your organization.
+
 
 *Live App:*  
 Check out the dashboard here:  
@@ -37,6 +35,10 @@ The dashboard uses MNHN data securely stored on Google Drive and is automaticall
 - Pandas  
 - Plotly  
 - Google Drive integration
+
+#Future Collaborations
+
+I'm open to collaborating with researchers, organizations, and teams to develop customized analytics solutions that meet their specific needs. If you're interested in exploring how data analytics can benefit your project or organization, feel free to reach out to me. Let's discuss how we can work together to create innovative solutions that drive impact.
 
 ## Contact  
 For questions or feedback, contact the MNHN analytics team.
