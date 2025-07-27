@@ -44,7 +44,7 @@ def load_data():
         st.warning(f"Key_MRQ sheet not loaded: {str(e)}")
         mrq_text_dict = {}
     return data, key, mrq_text_dict
-if st.button("🔄 Refresh Data"):
+if st.button("🔄 Sync Latest Data"):
     st.cache_data.clear()
     st.success("Data refreshed from Google Drive! Please wait...")
     st.rerun()
