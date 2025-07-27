@@ -44,7 +44,11 @@ def load_data():
         st.warning(f"Key_MRQ sheet not loaded: {str(e)}")
         mrq_text_dict = {}
     return data, key, mrq_text_dict
-
+if st.button("🔄 Refresh Data"):
+    load_data.clear()
+    st.success("Data refreshed from Google Drive! Please wait...")
+    st.experimental_rerun()
+    
 data, key, mrq_text_dict = load_data()
 rename_dict = dict(zip(key['Variables'], key['TEXT']))
 
