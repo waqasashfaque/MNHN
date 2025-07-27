@@ -293,11 +293,11 @@ Stock shortages of IFA supplements have improved significantly among most distri
 
 <div class="section-heading">GENERAL RECOMMENDATIONS:</div>
 <ul class="bullet-points">
-    <li><span style="font-size:24pt;">Targeted health campaigns require to focus on Jamshoro.</span></li>
-    <li><span style="font-size:24pt;">Promoting ANC utilization with encouraging ≥4 ANC visits.</span></li>
-    <li><span style="font-size:24pt;">Improving the birth practices through training providers on skilled attendance and cord clamping.</span></li>
-    <li><span style="font-size:24pt;">Enhancing community awareness by boosting IFA knowledge and breastfeeding practices.</span></li>
-    <li><span style="font-size:24pt;">Supply chain strengthening through ensuring IFA supplement availability.</span></li>
+    <li><span style="font-size:20pt;">Targeted health campaigns require to focus on Jamshoro.</span></li>
+    <li><span style="font-size:20pt;">Promoting ANC utilization with encouraging ≥4 ANC visits.</span></li>
+    <li><span style="font-size:20pt;">Improving the birth practices through training providers on skilled attendance and cord clamping.</span></li>
+    <li><span style="font-size:20pt;">Enhancing community awareness by boosting IFA knowledge and breastfeeding practices.</span></li>
+    <li><span style="font-size:20pt;">Supply chain strengthening through ensuring IFA supplement availability.</span></li>
 </ul>
 """, unsafe_allow_html=True
 )
