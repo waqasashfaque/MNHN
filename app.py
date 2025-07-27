@@ -268,8 +268,8 @@ if active_module == "EXECUTIVE SUMMARY":
     st.markdown("---")
     st.markdown("""
 <style>
-    .section-heading {font-size: 36pt;font-weight: bold;    }
-    .paragraph-text {font-size: 24pt;text-align: justify;line-height: 1;margin-bottom: 0px;}
+    .section-heading {font-size: 24pt;font-weight: bold;    }
+    .paragraph-text {font-size: 20pt;text-align: justify;line-height: 1;margin-bottom: 0px;}
     .bullet-points {line-height: 1;margin-bottom: 0px;padding-left: 20px;}
     .bullet-points li {argin-bottom: 0px;}
 </style>
