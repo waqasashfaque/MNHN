@@ -531,3 +531,5 @@ elif active_module == "Analysis of Multi-Response Variables":
 
 st.markdown("---")
 st.caption(f"Charts are dynamically updated based on your selected District(s): {district_display}")
+st.caption(f"The visualizations presented are for informational purposes only and do not constitute professional advice.")
+
