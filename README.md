@@ -12,8 +12,11 @@ The MNHN Dashboard is a robust, flexible, and scalable solution that can be tail
 Check out the dashboard here:  
 https://momentum-mnhn-dashboard.streamlit.app/
 
-for username and password you can directly contact with the developer of this application
-waqas.ashfaque@yahoo.com or 
+for username and password you can directly contact with the developer of this application or you can fill the User access form
+
+https://docs.google.com/forms/d/e/1FAIpQLSefDuwiMIH0uwkpmfhGwH3BEY487TqM8-keHaroTIYkn-uEHg/viewform
+
+Email: waqas.ashfaque@yahoo.com or 
 whatsapp at https://wa.me/923335696175
 
 ## Features  
