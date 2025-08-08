@@ -392,7 +392,7 @@ elif active_module == "MODULE 10: New Gender questions for endline":
 # --- Analysis of Multi-Response Variables ---
 elif active_module == "Analysis of Multi-Response Variables":
      st.markdown("---")
-       for prefix, columns in multi_select_groups.items():
+      for prefix, columns in multi_select_groups.items():
         main_question = mrq_text_dict.get(prefix, rename_dict.get(prefix, prefix))
        
         option_labels = [mrq_text_dict.get(col, rename_dict.get(col, col)) for col in columns]
